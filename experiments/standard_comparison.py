@@ -6,8 +6,8 @@ import time
 import random
 import numpy as np
 import torch
-from ..environments.vehicular_fl_env import VehicularFLEnv
-from ..schedulers import initialize_schedulers
+from environments.vehicular_fl_env import VehicularFLEnv
+from schedulers import initialize_schedulers
 
 def run_comparison(num_episodes=5, max_rounds=100):
     """

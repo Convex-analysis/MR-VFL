@@ -10,9 +10,9 @@ import matplotlib.pyplot as plt
 import os
 import traceback
 from datetime import datetime
-from ..environments.scheduling_count_env import SchedulingCountEnv
-from ..schedulers import initialize_schedulers
-from ..utils.visualization import plot_scheduling_count_results
+from environments.scheduling_count_env import SchedulingCountEnv
+from schedulers import initialize_schedulers
+from utils.visualization import plot_scheduling_count_results
 
 # Create output directory if it doesn't exist
 output_dir = os.path.join("MR-VFL", "results")

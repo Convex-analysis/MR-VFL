@@ -9,8 +9,8 @@ import torch
 import matplotlib.pyplot as plt
 import os
 from datetime import datetime
-from ..environments.dynamic_env import DynamicVehicularFLEnv
-from ..schedulers import initialize_schedulers
+from environments.dynamic_env import DynamicVehicularFLEnv
+from schedulers import initialize_schedulers
 
 # Create output directory if it doesn't exist
 output_dir = os.path.join("MR-VFL", "results")
