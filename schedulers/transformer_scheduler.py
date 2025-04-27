@@ -4,7 +4,7 @@ Transformer-based scheduler for MR-VFL.
 
 import torch
 from .ml_scheduler import MLBasedScheduler
-from ..models.transformer_model import TransformerModel
+from models.transformer_model import TransformerModel
 
 # Set device
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")

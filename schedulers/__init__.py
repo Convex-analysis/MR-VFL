@@ -17,9 +17,18 @@ def initialize_schedulers():
     Returns:
         Dictionary of scheduler instances
     """
+    # Import config
+    from config import scheduler_config
+
     # Initialize schedulers
     schedulers = {
-        "Mamba": MambaScheduler(model_path="models/mamba_scheduler.pth"),
+        "Mamba": MambaScheduler(
+            model_path=scheduler_config["mamba"]["model_path"],
+            input_dim=scheduler_config["mamba"]["input_dim"],
+            state_dim=scheduler_config["mamba"]["state_dim"],
+            d_model=scheduler_config["mamba"]["d_model"],
+            n_layers=scheduler_config["mamba"]["n_layers"]
+        ),
         "Transformer": TransformerScheduler(),
         "LSTM": LSTMScheduler(),
         "Greedy-Quality": GreedyQualityScheduler(),

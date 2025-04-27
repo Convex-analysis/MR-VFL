@@ -1,1 +1,6 @@
+*/__pycache__
 /__pycache__
+*.png
+*.txt
+*.csv
+*.pth

@@ -4,7 +4,7 @@ LSTM-based scheduler for MR-VFL.
 
 import torch
 from .ml_scheduler import MLBasedScheduler
-from ..models.lstm_model import LSTMModel
+from models.lstm_model import LSTMModel
 
 # Set device
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
